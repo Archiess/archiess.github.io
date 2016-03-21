@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pokemons">
+  <meta name="author" content="Archi">
+  <link rel="icon" href="favicon.ico">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='app.css'>
+
+  <title>Pokemons</title>
+
+</head>
+<body>
+  <div class="header">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 text-center">
+        <h1>Pokedex</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-6">
+        <ul id="pokemon-list"></ul>
+        <div id="pokemon-list-loader"><img src="ajax-loader.gif" /></div>
+        <button id="load-more" class="btn btn-success">Load more</button>
+      </div>
+      <div class="col-xs-6 col-md-6">
+        <div id="pokemon"></div>
+        <div id="pokemon-loader"><img src="ajax-loader.gif" /></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
