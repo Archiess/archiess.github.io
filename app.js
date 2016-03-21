@@ -9,8 +9,7 @@ $(window).scroll(function() {
   var left = offset.left;
   var right = offset.right;
   var top = offset.top;
-  var width = $('#pokemon').width();
-  var height = $('.view').height();
+  var width = $('#pokemon').width();  
   var scrollTop = $(window).scrollTop();
   if (scrollTop >= top) {
     $('#pokemon').css({
