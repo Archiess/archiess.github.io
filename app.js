@@ -2,24 +2,6 @@ var url = 'http://pokeapi.co/api/v1/pokemon';
 var limit = 12;
 var page = 1;
 
-$(window).scroll(function() {
-
-  var view = $('#pokemon');
-  var offset = view.offset();
-  var left = offset.left;
-  var right = offset.right;
-  var top = offset.top;
-  var width = $('#pokemon').width();  
-  var scrollTop = $(window).scrollTop();
-  if (scrollTop >= top) {
-    $('#pokemon').css({
-      position: 'fixed',
-      // top:top +'px'
-      //  width:width + 'px'
-    })
-  }
-});
-
 function getPokemonUrl(id)
 {
   return url + '/' + id;
