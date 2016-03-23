@@ -78,7 +78,7 @@ ul:after {
 }
 
 ul li{
-  display:inline-block;
+  display:inline-table;
   line-height:normal;
   height:250px;
   width:150px;
