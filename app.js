@@ -22,7 +22,7 @@ function getTypes(types)
   var template = '';
 
   $.each(types, function (i, type) {
-    template += '<div class="type-' + type.name + '">' + type.name + '</div>';
+    template += '<div class="type type-' + type.name + '">' + type.name + '</div>';
   });
 
   return template;
@@ -40,8 +40,8 @@ function loadMorePokemons()
       $.each(data.objects, function (i, pokemon) {
         template += `
           <li class="pokemon" id="${pokemon.national_id}">
-            <img class="image" src="${getPokemonImageUrl(pokemon.national_id)}" /><br>
-            <div class="pokname"><b>${pokemon.name}</b></div>
+            <img class="image pokemon-image" src="${getPokemonImageUrl(pokemon.national_id)}" /><br>
+            <b>${pokemon.name}</b>
             <div>${getTypes(pokemon.types)}</div>
           </li>
         `;
@@ -83,12 +83,13 @@ function loadPokemon(id)
 $('#load-more').click(loadMorePokemons);
 
 
-$('#pokemon-list').delegate('.pokemon', 'click', function (event) {
+$('#pokemon-list').delegate('.pokemon-image', 'click', function (event) {
   $("#pokemon").css('display','block');
-  loadPokemon($(this).attr('id'));  
-
+  loadPokemon($(this).parent().attr('id'));
 });
 
-
+$('#pokemon-list').delegate('.type', 'click', function (event) {
+  console.log('type');
+});
 
 $(document).ready(loadMorePokemons);
