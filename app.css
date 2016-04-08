@@ -18,13 +18,15 @@ h1{
 
 .pokemon {
   margin-bottom: 10px;
-  cursor: pointer;
 }
 
 #container {
   margin-bottom: 25px;
 }
 
+.pokemon-image, .type {
+  cursor: pointer;
+}
 
 .type-fire {
   color: red;
@@ -97,7 +99,7 @@ ul li{
 }
 
 #pokemon{
-  height:550px;
+  height:630px;
   width:250px;
   border:1px solid black;
   display:none;
@@ -105,13 +107,21 @@ ul li{
   position:fixed;
 }
 
+.view .type{
+  line-height: 0.8;
+}
+
+td{
+  border:1px solid black !important;
+}
+
+
 .view-image{
   width: 100%;
   height:230px;
   border: 1px solid black;
   /*margin: 10px 10px 10px 10px;*/
 }
-
 
 @media (max-width: 450px){
   #pokemon{
