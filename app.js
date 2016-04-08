@@ -41,7 +41,7 @@ function loadMorePokemons()
         template += `
           <li class="pokemon" id="${pokemon.national_id}">
             <img class="image" src="${getPokemonImageUrl(pokemon.national_id)}" /><br>
-            <b>${pokemon.name}</b>
+            <div class="pokname"><b>${pokemon.name}</b></div>
             <div>${getTypes(pokemon.types)}</div>
           </li>
         `;
@@ -85,15 +85,7 @@ $('#load-more').click(loadMorePokemons);
 
 $('#pokemon-list').delegate('.pokemon', 'click', function (event) {
   $("#pokemon").css('display','block');
-  loadPokemon($(this).attr('id'));
-
-  var par = $('li:has(div[class =' +  event.target.className + '])');
-  $('.pokemon').delegate('.' + event.target.className, 'click', function(){
-       $('li').not(par).css('display','none');
-   })
-
-
-
+  loadPokemon($(this).attr('id'));  
 
 });
 

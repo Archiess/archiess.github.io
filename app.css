@@ -105,13 +105,13 @@ ul li{
   position:fixed;
 }
 
-
 .view-image{
   width: 100%;
   height:230px;
   border: 1px solid black;
   /*margin: 10px 10px 10px 10px;*/
 }
+
 
 @media (max-width: 450px){
   #pokemon{
