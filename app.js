@@ -65,7 +65,7 @@ function loadPokemon(id)
         <div class="text-center"><b>${pokemon.name}</b></div><br>
 
         <table class="table table-bordered">
-        <tr><td><b>Type:</b></td><td>${getTypes(pokemon.types)}</td></tr>        
+        <tr><td><b>Type:</b></td><td>${getTypes(pokemon.types)}</td></tr>
         <tr><td><b>Attack:</b></td><td>${pokemon.attack}</td></tr>
         <tr><td><b>Defense:</b></td><td> ${pokemon.defense}</td></tr>
         <tr><td><b>HP:</b> </td><td>${pokemon.hp}</td></tr>
@@ -92,8 +92,17 @@ $('#pokemon-list').delegate('.pokemon-image', 'click', function (event) {
   loadPokemon($(this).parent().attr('id'));
 });
 
-$('#pokemon-list').delegate('.type', 'click', function (event) {
-  console.log('type');
-});
+$('.filter').click(function (e) {
+  e.preventDefault();
+
+  var type = $(this).data('type');
+
+  $('body').removeAttr('class');
+
+  if (type != 'clear') {
+    $('body').addClass('filtered');
+    $('body').addClass(type);
+  }
+})
 
 $(document).ready(loadMorePokemons);

@@ -3,6 +3,24 @@
   margin: 10px;
 }
 
+.filter-cont ul li{
+  list-style: none;
+  display:inline-block;
+  margin-right:15px;
+}
+a{
+  color:black;
+  font-weight: bold;
+  background: #AAAAAA;
+  padding:4px;
+  border:1px solid black;
+  border-radius: 2px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 .header {
   margin-top:10px;
   margin-bottom:10px;
@@ -133,4 +151,32 @@ td{
   body{
     min-width:315px;
   }
+}
+
+body.filtered .pokemon {
+  display: none !important;
+}
+
+body.water .pokemon.water {
+  display: inline-table !important;
+}
+
+body.fire .pokemon.fire {
+  display: inline-table !important;
+}
+
+body.bug .pokemon.bug {
+  display: inline-table !important;
+}
+body.flying .pokemon.flying {
+  display: inline-table !important;
+}
+body.normal .pokemon.normal {
+  display: inline-table !important;
+}
+body.electric .pokemon.electric {
+  display: inline-table !important;
+}
+body.poison .pokemon.poison{
+  display: inline-table !important;
 }
