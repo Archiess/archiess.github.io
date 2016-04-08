@@ -28,6 +28,17 @@ function getTypes(types)
   return template;
 }
 
+function joinTypes(types)
+{
+  var join = '';
+
+  $.each(types, function (i, type) {
+    join += type.name + ' ';
+  });
+
+  return join;
+}
+
 function loadMorePokemons()
 {
     $('#pokemon-list-loader').show();
@@ -39,7 +50,7 @@ function loadMorePokemons()
 
       $.each(data.objects, function (i, pokemon) {
         template += `
-          <li class="pokemon" id="${pokemon.national_id}">
+          <li class="pokemon ${joinTypes(pokemon.types)}" id="${pokemon.national_id}">
             <img class="image pokemon-image" src="${getPokemonImageUrl(pokemon.national_id)}" /><br>
             <b>${pokemon.name}</b>
             <div>${getTypes(pokemon.types)}</div>
