@@ -46,32 +46,48 @@ h1{
   cursor: pointer;
 }
 
+.type{
+  width:60px;
+  padding:5px;
+  border:1px solid black;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
 .type-fire {
-  color: red;
+  background:red;
+  color:#DDDDDD;
+}
+
+.type-normal {
+  background:#AAAAAA;
 }
 
 .type-ice {
-  color: lightblue;
+  background: lightblue;
 }
 
 .type-steel {
-  color: gray;
+  background: gray;
 }
 
 .type-water {
-  color: blue;
+  background: blue;
+  color:#DDDDDD;
 }
 
 .type-bug {
-  color: green;
+  background: green;
 }
 
 .type-flying {
-  color: orange;
+  background: orange;
 }
 
 .type-poison {
-  color: lightgreen;
+  background: lightgreen;
 }
 .btn{
   width:100%;
@@ -104,7 +120,6 @@ ul#pokemon-list li{
   width:150px;
   border: 1px solid black;
   margin-bottom: 30px;
-  text-align: center;
   list-style:none;
   padding:10px;
 }
