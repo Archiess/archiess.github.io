@@ -137,7 +137,7 @@ ul#pokemon-list li{
 }
 
 #pokemon{
-  height:650px;
+  height:630px;
   width:250px;
   border:1px solid black;
   display:none;

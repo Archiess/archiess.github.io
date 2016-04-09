@@ -76,15 +76,15 @@ function loadPokemon(id)
         <div class="text-center"><b>${pokemon.name}</b></div><br>
 
         <table class="table table-bordered">
-        <tr><td><b>Type:</b></td><td>${getTypes(pokemon.types)}</td></tr>
-        <tr><td><b>Attack:</b></td><td>${pokemon.attack}</td></tr>
-        <tr><td><b>Defense:</b></td><td> ${pokemon.defense}</td></tr>
-        <tr><td><b>HP:</b> </td><td>${pokemon.hp}</td></tr>
-        <tr><td><b>SP Attack:</b> </td><td>${pokemon.sp_atk}</td></tr>
-        <tr><td><b>SP Defence:</b></td><td> ${pokemon.sp_def}</td></tr>
-        <tr><td><b>Speed:</b> </td><td>${pokemon.speed}</td></tr>
-        <tr><td><b>Weight:</b></td><td> ${pokemon.weight}</td></tr>
-        <tr><td><b>Total moves:</b></td><td> ${pokemon.moves.length}</td></tr>
+        <tr><td><b>Type</b></td><td>${getTypes(pokemon.types)}</td></tr>
+        <tr><td><b>Attack</b></td><td>${pokemon.attack}</td></tr>
+        <tr><td><b>Defense</b></td><td> ${pokemon.defense}</td></tr>
+        <tr><td><b>HP</b> </td><td>${pokemon.hp}</td></tr>
+        <tr><td><b>SP Attack</b> </td><td>${pokemon.sp_atk}</td></tr>
+        <tr><td><b>SP Defence</b></td><td> ${pokemon.sp_def}</td></tr>
+        <tr><td><b>Speed</b> </td><td>${pokemon.speed}</td></tr>
+        <tr><td><b>Weight</b></td><td> ${pokemon.weight}</td></tr>
+        <tr><td><b>Total moves</b></td><td> ${pokemon.moves.length}</td></tr>
         </table>
 
       </div>
