@@ -89,6 +89,11 @@ h1{
 .type-poison {
   background: lightgreen;
 }
+
+#pokemon .type{
+  width:51px;
+  margin-right: 2px;
+}
 .btn{
   width:100%;
 }
@@ -132,7 +137,7 @@ ul#pokemon-list li{
 }
 
 #pokemon{
-  height:630px;
+  height:650px;
   width:250px;
   border:1px solid black;
   display:none;
