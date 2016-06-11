@@ -107,7 +107,7 @@ $('.filter').click(function (e) {
   e.preventDefault();
 
   var type = $(this).data('type');
-
+  console.log(type);
   $('body').removeAttr('class');
 
   if (type != 'clear') {
